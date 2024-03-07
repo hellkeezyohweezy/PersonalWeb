@@ -110,12 +110,13 @@ export const aboutData: About = {
   description: `I am the first person in my family to graudate from a university. Both my parents are Mexican, which makes me a 
   Chicano. I developed my interest in computers at an early age, when I received my first laptop at 10 years old. I later built
   my own PC at 16, with money I saved up from doing yardwork and chores. During this time, I was also in AP computer sicence principles,
-  which strengthened my liking of computers. And I eventually decided to pursue an education in computer science.`,
+  which strengthened my liking of computers. And I eventually decided to pursue an education in computer science. I like to watch the NBA,
+  NFL, and occassionally MLB. I spend most of my free time going to the gym or learning about new technologies.`,
   aboutItems: [
     {label: 'Location', text: 'Moreno Valley, CA', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
     {label: 'Nationality', text: 'US Citizen', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Powerbuilding, Banjos', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Electronics, Powerbuilding, Sneakerhead', Icon: SparklesIcon},
     {label: 'Study', text: 'University of California, Riverside', Icon: AcademicCapIcon},
   ],
 };
