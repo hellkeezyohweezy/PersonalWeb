@@ -163,6 +163,10 @@ export const skills: SkillGroup[] = [
         name: 'C#',
         level: 8,
       },
+      {
+        name: 'Node.js',
+        level: 5,
+      },
     ],
   }
 ];

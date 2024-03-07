@@ -2,6 +2,7 @@ import {FC, memo} from 'react';
 
 import {education, experience, SectionId, skills} from '../../../data/data';
 import Section from '../../Layout/Section';
+import Project from './Project';
 import ResumeSection from './ResumeSection';
 import {SkillGroup} from './Skills';
 import TimelineItem from './TimelineItem';
@@ -17,7 +18,7 @@ const Resume: FC = memo(() => {
         </ResumeSection>
         <ResumeSection title="Projects">
           {experience.map((item, index) => (
-            <TimelineItem item={item} key={`${item.title}-${index}`} />
+            <Project item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
         <ResumeSection title="Skills">
