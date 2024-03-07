@@ -94,6 +94,14 @@ export interface TimelineItem {
 }
 
 /**
+ * Resume section
+ */
+ export interface Project {
+  title: string;
+  content: JSX.Element;
+}
+
+/**
  * Testimonial section
  */
 export interface TestimonialSection {
