@@ -1,7 +1,7 @@
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
-  BuildingOffice2Icon,
+  //BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
   MapIcon,
@@ -9,11 +9,11 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+//import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
+import heroImage from '../images/header3.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -25,8 +25,9 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '../images/cpu.jpg';
 import testimonialImage from '../images/testimonial.webp';
+
 import {
   About,
   ContactSection,
@@ -38,6 +39,7 @@ import {
   Social,
   TestimonialSection,
   TimelineItem,
+  Project,
 } from './dataDef';
 
 /**
@@ -69,24 +71,25 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Christian Ruiz.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a recent <strong className="text-stone-100">UCR gradaute</strong>, bachelor's in 
+         <strong className="text-stone-100"> Computer Science</strong>. I am a 2nd generation immigrant and I 
+         hope to empower my family into believing that they too can graduate university and get into fields 
+         that seem intimidating to be successful in.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me going to the <strong className="text-stone-100">gym</strong>,
+        spending time with <strong className="text-stone-100">family and friends</strong>, or going on adventures with {' '}
+        <strong className="text-stone-100">nature</strong>.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'https://docs.google.com/document/d/1Ds2Shr14DvrPwcC9s1hJMaJ8_2qetMTHknc6gN6Gnvo/edit?usp=sharing',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +107,17 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am the first person in my family to graudate from a university. Both my parents are Mexican, which makes me a 
+  Chicano. I developed my interest in computers at an early age, when I received my first laptop at 10 years old. I later built
+  my own PC at 16, with money I saved up from doing yardwork and chores. During this time, I was also in AP computer sicence principles,
+  which strengthened my liking of computers. And I eventually decided to pursue an education in computer science. I like to watch the NBA,
+  NFL, and occassionally MLB. I spend most of my free time going to the gym or learning about new technologies.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Moreno Valley, CA', Icon: MapIcon},
+    {label: 'Age', text: '22', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'US Citizen', Icon: FlagIcon},
+    {label: 'Interests', text: 'Electronics, Powerbuilding, Sneakerhead', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of California, Riverside', Icon: AcademicCapIcon},
   ],
 };
 
@@ -129,66 +133,44 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
-      },
-      {
         name: 'Spanish',
-        level: 3,
+        level: 9,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Programming Languages:',
     skills: [
       {
-        name: 'React',
+        name: 'C++',
+        level: 10,
+      },
+      {
+        name: 'Java',
+        level: 10,
+      },
+      {
+        name: 'Python',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'LC-3',
+        level: 9,
       },
       {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
+        name: 'SQL',
         level: 8,
       },
       {
-        name: 'Rust',
+        name: 'C#',
+        level: 8,
+      },
+      {
+        name: 'Node.js',
         level: 5,
       },
-      {
-        name: 'Golang',
-        level: 4,
-      },
     ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
-    ],
-  },
+  }
 ];
 
 /**
@@ -268,34 +250,30 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
+    date: 'May 2022',
+    location: 'Moreno Valley College',
+    title: 'AS Math & Science',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
+    date: 'May 2024',
+    location: 'University of California Riverside, Riverside CA',
+    title: 'B.S Computer Science',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
 
-export const experience: TimelineItem[] = [
+export const experience: Project[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    title: 'Flight Booking System',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Took care of user credential confidentiality by encrypting and decrypting user login information as necessary. Also updated and stored booked flight data 
+        for each user's itinerary. Also stored, filtered and updated flight data.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
     title: 'Junior bug fixer',
     content: (
       <p>
@@ -340,23 +318,18 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'chrisruiz8852@gmail.com',
+      href: 'mailto:chrisruiz8852@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Moreno Valley, CA',
+      href: 'https://www.google.com/maps/place/Moreno+Valley,+CA/@33.9216847,-117.3572359,11z/data=!3m1!4b1!4m6!3m5!1s0x80dca109db19e29b:0xc3fab215a09b3f2c!8m2!3d33.9424658!4d-117.2296717!16s%2Fm%2F01zjg7_?entry=ttu',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'cr-droid',
+      href: 'https://github.com/cr-droid',
     },
   ],
 };
@@ -365,9 +338,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/cr-droid'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/christian-ruiz-581a761b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B76aXVz91T%2BKmSz8cN1pQTQ%3D%3D'},
 ];
